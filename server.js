@@ -18,7 +18,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "/public")));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://admin:admin123@ds211269.mlab.com:11269/heroku_jzr9fbt1", { useNewUrlParser: true, useUnifiedTopology: true });
 
 //Rendering HTML
 
